@@ -4529,8 +4529,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				client.sendMessage(from, onichanopus, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 				}
 				if (budy.includes('last')) {
-				const anu-neopus = fs.readFileSync('./mp3/onichan.opus');
-				client.sendMessage(from, anu-neopus, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+				const anuneopus = fs.readFileSync('./mp3/onichan.opus');
+				client.sendMessage(from, anuneopus, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 				}
 				if (budy.includes('symphony')) {
 				const ah2mp3 = fs.readFileSync('./mp3/ah2.mp3');
