@@ -869,22 +869,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, ainecs, MessageType.audio, { quoted: iky, ptt: true })
 				await limitAdd(sender)
 				break
-	      case 'onichan':
-		if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				//if (!isPremium) return reply('Maaf kamu bukan user premium!')
-				let ainecs = fs.readFileSync('./mp3/onichan2.opus')
-				itsmeiky.sendMessage(from, ainecs, MessageType.audio, { quoted: iky, ptt: true })
-				await limitAdd(sender)
-				break
-	      case 'onichan2':
-		if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				//if (!isPremium) return reply('Maaf kamu bukan user premium!')
-				let ainecs = fs.readFileSync('./mp3/onichan.opus')
-				itsmeiky.sendMessage(from, ainecs, MessageType.audio, { quoted: iky, ptt: true })
-				await limitAdd(sender)
-				break
+	      
               case 'shizuka':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
