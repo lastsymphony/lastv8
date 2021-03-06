@@ -3902,7 +3902,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					break
 			case 'fb':
                 			if (!isRegistered) return reply( ind.noregis())
-                    			if (isLimit(sender)) return reply(ind.limitend(`Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
                     			await kamlz.reply(from, ind.wait(), id)
 					require('fb-video-downloader').getInfo(q).then(info => {
 					console.log(JSON.stringify(info, null, 2))
