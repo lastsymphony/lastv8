@@ -3900,27 +3900,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					}
 					await limitAdd(sender)
 					break
-			case 'fb':
-                			if (!isRegistered) return reply( ind.noregis())
-                    			await kamlz.reply(from, ind.wait(), id)
-					require('fb-video-downloader').getInfo(q).then(info => {
-					console.log(JSON.stringify(info, null, 2))
-					kamlz.sendFileFromUrl(from, info.download.sd, 'fb.mp4', 'Judul :' + `${info.title}` +'',id)
-					batasAdd(serial)
-					})
-					
-            				break
-			case 'ytsearch':
-					if (args.length < 1) return reply('Yang mau di cari apa Kak?')
-					reply(mess.wait)
-					anu = await fetchJson(`http://api.hurtzcrafter.xyz/ytsearch?q=${body.slice(10)}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					teks = '----------------------------------------------------\n'
-					for (let i of anu.result) {
-						teks += `Title : ${i.title}\n*Link* : https://youtu.be/${i.id}\n*Published* : ${i.ago}\n*Duration* : ${i.timestamp}\n*Views* : ${i.views}\n*Source* : ${i.url}\n----------------------------------------------------\n`
-					}
-					reply(teks.trim())
-					break
 			case 'stickergif':
 			case 'stikergif':
 			case 'sgif':
