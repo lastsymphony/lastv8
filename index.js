@@ -3417,7 +3417,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, hasil, image, {quoted: iky})
 					await limitAdd(sender)
 					break
-		case 'hentai2':
+		case 'hentai':
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -3911,9 +3911,9 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				    if (!isRegistered) return reply(ind.noregis())
 				    if (isLimit(sender)) return reply(ind.limitend(pusname))
                     await limitAdd(sender)
-					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-						const media = await baby.downloadAndSaveMediaMessage(encmedia)
+					if ((isMedia && !iky.message.videoMessage || isQuotedImage) && args.length == 0) {
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(iky).replace('quotedM','m')).message.extendedTextMessage.contextInfo : iky
+						const media = await itsmeiky.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
 						await ffmpeg(`./${media}`)
 							.input(media)
@@ -3928,14 +3928,14 @@ itsmeiky.on('group-participants-update', async (anu) => {
 							.on('end', function () {
 								console.log('Finish')
 								buffer = fs.readFileSync(ran)
-								baby.sendMessage(from, buffer, sticker, {quoted: mek})
+								itsmeiky.sendMessage(from, buffer, sticker, {quoted: iky})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)
 							})
 							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
 							.toFormat('webp')
 							.save(ran)
-					} else if ((isMedia && mek.message.videoMessage.seconds < 11 || isQuotedVideo && mek.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
+					} else if ((isMedia && iky.message.videoMessage.seconds < 11 || isQuotedVideo && iky.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await baby.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
@@ -3954,7 +3954,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 							.on('end', function () {
 								console.log('Finish')
 								buffer = fs.readFileSync(ran)
-								baby.sendMessage(from, buffer, sticker, {quoted: mek})
+								itsmeiky.sendMessage(from, buffer, sticker, {quoted: iky})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)
 							})
@@ -4522,20 +4522,45 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					}
 					await limitAdd(sender)
 					break
+					///////////////////////////////////////////////////////////////////////////////////////////////////////test//////////////////////////////
+		case 'randomloli':
+					if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/randomloli`, {method: 'get'})
+					reply(ind.wait())
+					n = JSON.parse(JSON.stringify(data));
+					niiky =  n[Math.floor(Math.random() * n.length)];
+					pok = await getBuffer(niiky)
+					itsmeiky.sendMessage(from, pok, image, { quoted: iky })
+					await limitAdd(sender)
+					break
+		case 'randomyuri':
+		case 'yuri':
+				if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					itsmeiky.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/random_yuri`, {method: 'get'})
+					reply(ind.wait())
+					n = JSON.parse(JSON.stringify(data));
+					niiky =  n[Math.floor(Math.random() * n.length)];
+					pok = await getBuffer(niiky)
+					itsmeiky.sendMessage(from, pok, image, { quoted: iky })
+					await limitAdd(sender)
+					break
+			
 				default:
 ////////////////////////////////////////////////////////////auto reply original last/////////////////////////////////////////////////////////////////////
-				if (budy.includes('bot')) {
-				const onichanopus = fs.readFileSync('./mp3/onichan.opus');
-				client.sendMessage(from, onichanopus, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-				}
-				if (budy.includes('last')) {
-				const anuneopus = fs.readFileSync('./mp3/onichan.opus');
-				client.sendMessage(from, anuneopus, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-				}
-				if (budy.includes('symphony')) {
-				const ah2mp3 = fs.readFileSync('./mp3/ah2.mp3');
-				client.sendMessage(from, ah2mp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-				}
+					if (budy.includes('tutu')) {
+					const tump3 = fs.readFileSync('./mp3/tu.mp3');
+					itsmeiky.sendMessage(from, tump3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('desah')) {
+					const ahopus = fs.readFileSync('./mp3/ah.opus');
+					itsmeiky.sendMessage(from, ahopus, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
 			if (body.startsWith(`${prefix}${command}`)) {
 
                   reply(`Maaf *${pushname}*, Command *${prefix}${command}* Tidak Terdaftar Di Dalam *${prefix}menu*!`)
