@@ -2906,8 +2906,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
                 			const serialUser = createSerial(20)
                 			if(isNaN(umurUser)) return await reply('Umur harus berupa angka!!')
                 			if (namaUser.length >= 30) return reply(`why is your name so long it's a name or a train`)
-                			if (umurUser > 20) return reply(`usia Anda terlalu tua untuk menggunakan bot, maksimal 20 years`)
-                			if (umurUser < 15) return reply(`usia Anda terlalu muda untuk menggunakan bot, minimum 15 years`)
+                			if (umurUser > 17) return reply(`usia Anda terlalu tua untuk menggunakan bot, maksimal 17 years`)
+                			if (umurUser < 16) return reply(`usia Anda terlalu muda untuk menggunakan bot, minimum 16 years`)
                 					try {
 								ppimg = await itsmeiky.getProfilePicture(`${sender.split('@')[0]}@c.us`)
 								} catch {
@@ -3085,15 +3085,15 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  			if (!isRegistered) return reply( ind.noregis())
 					await itsmeiky.sendMessage(from, `Pong!!!!\nSpeed: ${processTime(time, moment())} _Second_`)
 					break
-		case 'menu02': 
+		/*case 'menu02': 
 		case 'menu2':
 					 // Fix Bug By ItsmeikyXSec404				
 					if (!isRegistered) return reply( ind.noregis())
 					if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 					const uangku = checkATMuser(sender)
-					await costum(ind.menu(pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role), text, tescuk, cr)
-					break
+					await costum(ind.menu(pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku), text, tescuk, cr)
+					break*/
 		case 'donasi':
 		case 'donate':
 					 // Fix Bug By ItsmeikyXSec404				
@@ -4261,6 +4261,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
             case 'developer':
                   itsmeiky.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: iky})
                   itsmeiky.sendMessage(from, 'Tuh nomer owner ku >_<, jangan spam atau ku block kamu',MessageType.text, { quoted: iky} )
+		  itsmeiky.sendContact(m.chat, '6289670394574', 'Aditya jatayu', m)
 					break    
            /*case 'setname':
 					if (!isGroup) return reply(ind.groupo())
@@ -4355,7 +4356,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						fs.unlinkSync(media)
 						if (err) return reply(ind.stikga())
 						buffer = fs.readFileSync(ran)
-						itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: '*DAH JADI SETAN* '})
+						itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Done ya '})
 						fs.unlinkSync(ran)
 					})
 					await limitAdd(sender)
@@ -4474,7 +4475,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					break
                  case 'eventt':
 					if (!isGroup) return reply(ind.groupo())
-				if (!isAdmin) return reply('*Only Admin bot*')
+					if (!isAdmin) return reply('*Only Admin bot*')
 					if (args.length < 1) return reply('Mengaktifkan tekan 1, Menonaktif tekan 0')
 					if (Number(args[0]) === 1) {
 						if (isEventon) return reply('*Fitur event sudah aktif sebelum nya*')
@@ -4506,7 +4507,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					}
 					await limitAdd(sender)
 					break
-				case 'wait':
+		case 'wait':
 					//if (!isPremium) return reply('Maaf kamu bukan user premium!')
 					if ((isMedia && !iky.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(ind.wait())
@@ -4536,18 +4537,18 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, pok, image, { quoted: iky })
 					await limitAdd(sender)
 					break
-		case 'randomyuri':
-		case 'yuri':
-				if (!isRegistered) return reply( ind.noregis())
+		case 'randombite':
+		case 'bite':
+					if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					itsmeiky.updatePresence(from, Presence.composing) 
-					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/random_yuri`, {method: 'get'})
+					//if (!isPremium) return reply('Maaf kamu bukan user premium!')
+					//if (!isNsfw) return reply(ind.nsfwoff())
+					if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					gatauda = body.slice(9)
 					reply(ind.wait())
-					n = JSON.parse(JSON.stringify(data));
-					niiky =  n[Math.floor(Math.random() * n.length)];
-					pok = await getBuffer(niiky)
-					itsmeiky.sendMessage(from, pok, image, { quoted: iky })
+					data = await fetchJson('https://lolhuman.herokuapp.com/api/random/bite?apikey=be0b084a8affd7b78b478649')
+					hasil = await getBuffer(data.url)
+					itsmeiky.sendMessage(from, hasil, image, {quoted: iky})
 					await limitAdd(sender)
 					break
 		case 'nhentaipdf':
