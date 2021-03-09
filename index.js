@@ -1052,7 +1052,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  		if (!isRegistered) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				payout = body.slice(10)
-				const koinPerlimit = 2000
+				const koinPerlimit = 50
 				const total = koinPerlimit * payout
 				if ( checkATMuser(sender) <= total) return reply(`Maaf uang kamu belum mencukupi. silahkan kumpulkan dan beli nanti`)
 				if ( checkATMuser(sender) >= total ) {
@@ -1067,7 +1067,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				//if (!isPremium) return reply('Maaf kamu bukan user premium!')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				payout = body.slice(17)
-				const koinpremPerlimit = 500
+				const koinpremPerlimit = 10
 				const totalprem = koinpremPerlimit * payout
 				if ( checkATMuser(sender) <= totalprem) return reply(`Maaf uang kamu belum mencukupi. silahkan kumpulkan dan beli nanti`)
 				if ( checkATMuser(sender) >= totalprem ) {
@@ -1241,10 +1241,10 @@ itsmeiky.on('group-participants-update', async (anu) => {
                                         itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 					await limitAdd(sender)
                                         break
-		case 'cium':
+		/*//case 'cium':
                                          // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+                 //if (!isRegistered) return reply( ind.noregis())
+                                        //if (isLimit(sender)) return reply(ind.limitend(pusname))
 					//if (!isPremium) return reply('Maaf kamu bukan user premium!')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					ranp = getRandom('.gif')
@@ -1259,7 +1259,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						fs.unlinkSync(rano)
 					})
 					await limitAdd(sender)
-					break
+					break*/
 		case 'peluk':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -2547,7 +2547,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						//if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchJson(`https://waifu.pics/api/nsfw/waifu`, {method: 'get'})
 						buffer = await getBuffer(res.neko)
-						itsmeiky.sendMessage(from, buffer, image, {quoted: shizuka, caption: 'Jangan jadiin bahan buat comli om'})
+						itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Jangan jadiin bahan buat comli om'})
 					    } catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply(' *ERROR* ')
@@ -4363,7 +4363,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  case 'simi':
 					if (args.length < 1) return reply('Textnya mana kak?')
 					teks = body.slice(5)
-					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
+					anu = await simih(teks) fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
 					reply(anu)
 					break
@@ -4507,7 +4507,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender)
 					break
 				case 'wait':
-					if (!isPremium) return reply('Maaf kamu bukan user premium!')
+					//if (!isPremium) return reply('Maaf kamu bukan user premium!')
 					if ((isMedia && !iky.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(ind.wait())
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(iky).replace('quotedM','m')).message.extendedTextMessage.contextInfo : iky
@@ -4550,6 +4550,31 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, pok, image, { quoted: iky })
 					await limitAdd(sender)
 					break
+		case 'nhentaipdf':
+					if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (isBanned) return reply('Maaf kamu sudah terbenned!')
+                    			last = args[0]
+                    			get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/nhentaipdf/${last}?apikey=a3481322a759645972899c24`)
+                   		 	get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/nhentaipdf/${last}?apikey=a3481322a759645972899c24`)
+                    			get_result = get_result.result
+                   	 		buffer = await getBuffer(get_result.file_pdf)
+                    			itsmeiky.sendMessage(from, buffer, document, { quoted: iky, mimetype: Mimetype.pdf })
+                    			buffer = await getBuffer(get_result)
+                    			itsmeiky.sendMessage(from, buffer, document, { quoted: iky, mimetype: Mimetype.pdf, filename: `${last}.pdf` })
+                    			break
+		case 'wetglas':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(9)
+				reply(ind.wait())
+				ct = await getBuffer(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=be0b084a8affd7b78b478649&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
 			
 				default:
 ////////////////////////////////////////////////////////////auto reply original last/////////////////////////////////////////////////////////////////////
@@ -4557,9 +4582,73 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					const tump3 = fs.readFileSync('./mp3/tu.mp3');
 					itsmeiky.sendMessage(from, tump3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
 					}
+					if (budy.includes('tutu')) {
+					const tump3 = fs.readFileSync('./mp3/tu.mp3');
+					itsmeiky.sendMessage(from, tump3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
 					if (budy.includes('desah')) {
 					const ahopus = fs.readFileSync('./mp3/ah.opus');
 					itsmeiky.sendMessage(from, ahopus, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('tutu')) {
+					const arigatounyamp3 = fs.readFileSync('./mp3/arigatounya.mp3');
+					itsmeiky.sendMessage(from, arigatounyamp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('yamete')) {
+					const yametemp3 = fs.readFileSync('./mp3/yamete.mp3');
+					itsmeiky.sendMessage(from, yametemp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('ohayo')) {
+					const ohayoump3 = fs.readFileSync('./mp3/ohayou.mp3');
+					itsmeiky.sendMessage(from, ohayoump3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('araara')) {
+					const arav2mp3 = fs.readFileSync('./mp3/arav2.mp3');
+					itsmeiky.sendMessage(from, arav2mp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('ara')) {
+					const arav3mp3 = fs.readFileSync('./mp3/arav3.mp3');
+					itsmeiky.sendMessage(from, arav3mp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('bernyanyi')) {
+					const bernyanyimp3 = fs.readFileSync('./mp3/bernyanyi.mp3');
+					itsmeiky.sendMessage(from, bernyanyimp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('fbi')) {
+					const fbimp3 = fs.readFileSync('./mp3/fbi.mp3');
+					itsmeiky.sendMessage(from, fbimp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('sayonara')) {
+					const ara2sayonaramp3 = fs.readFileSync('./mp3/ara2sayonara.mp3');
+					itsmeiky.sendMessage(from, ara2sayonaramp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('hai')) {
+					const hellomp3 = fs.readFileSync('./mp3/hello.mp3');
+					itsmeiky.sendMessage(from, hellomp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('hello')) {
+					const hellomp3 = fs.readFileSync('./mp3/hello.mp3');
+					itsmeiky.sendMessage(from, hellomp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('konnichiwa')) {
+					const konnichiwamp3 = fs.readFileSync('./mp3/konnichiwa.mp3');
+					itsmeiky.sendMessage(from, konnichiwamp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('anjay')) {
+					const anjaymp3 = fs.readFileSync('./mp3/anjay.mp3');
+					itsmeiky.sendMessage(from, anjaymp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('ara2')) {
+					const ara2v4mp3 = fs.readFileSync('./mp3/ara2v4.mp3');
+					itsmeiky.sendMessage(from, ara2v4mp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('oniichan')) {
+					const oniichanmp3 = fs.readFileSync('./mp3/oniichan.mp3');
+					itsmeiky.sendMessage(from, oniichanmp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
+					}
+					if (budy.includes('oniichanbaka')) {
+					const oniichanbaka = fs.readFileSync('./mp3/oniichanbaka.mp3');
+					itsmeiky.sendMessage(from, oniichanbakamp3, MessageType.audio, {quoted: iky, mimetype: 'audio/mp4', ptt:true})
 					}
 			if (body.startsWith(`${prefix}${command}`)) {
 
