@@ -1260,7 +1260,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						fs.unlinkSync(rano)
 					})
 					await limitAdd(sender)
-					break*/
+					break
 		case 'peluk':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
