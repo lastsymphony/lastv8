@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 PENDAFTARAN 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar shizuka|22*`
+	return`*「 PENDAFTARAN 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar SYMPHONY|17*`
 }
 
 exports.rediregis = () => {
@@ -63,7 +63,7 @@ exports.nsfwoff = () => {
 }
 
 exports.bug = () => {
-	return`*Masalah telah di laporkan ke owner SHIZUKA, Laporan palsu atau main² tidak akan ditanggapi.*`
+	return`*Masalah telah di laporkan ke owner SYMPHONY, Laporan palsu atau main² tidak akan ditanggapi.*`
 }
 
 exports.wrongf = () => {
@@ -114,24 +114,18 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
-//anjing INFO DEVELOPER jangan di ganti bangsat!!
-//cuma numpang nama doang lu !!
-//kalau INFO DEVELOPER ga di ganti gw ikhlas !!
-//---------------------------
-//Fuck dont change INFO DEVELOPER !!
-//You only get your name fuck !!
-//If INFO DEVELOPER not in change, its okey!!
+
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role) => { 
-	return `「 *SHIZUKA BOT* 」
+	return `「 *SYMPHONY BOT* 」
 ◪ *INFO DEVELOPER*
-  ❏ Nama: ItsmeikyXSec404
-  ❏ Wa: wa.me/6281281872699
-  ❏ Ig: https://instagram.com/itsmeikyxsec404
+  ❏ Nama: LAST SYMPHONY
+  ❏ Wa: wa.me/6289670394574
+  ❏ Ig: https://instagram.com/
   ----------------------------------
-◪ *INFO SHIZUKA*
-  ❏ Nama: SHIZUKA 
-  ❏ Web: https://shizukaa.xyz/
-  ❏ Web Api: https://shizukaa.xyz/
+◪ *INFO SYMPHONY*
+  ❏ Nama: SYMPHONY 
+  ❏ Web: https://
+  ❏ Web Api: https://
   ----------------------------------
 ◪ *YOUR INFO*
   ❏ Prefix: 「  ${prefix}  」
@@ -462,7 +456,7 @@ exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel,
 `}
  
 exports.limitend = (pushname) => {
-	return`*Maaf ${pushname} limit hari ini habis*\n*Hubungi kami* : wa.me/62895330379186\n\n*Note : Kami akan berikan random dari 1-10*`
+	return`*Maaf ${pushname} limit hari ini habis*\n*Hubungi kami* : wa.me/6289670394574\n\n*Note : Kami akan berikan random dari 1-10*`
 }
 
 exports.limitcount = (limitCounts) => {
