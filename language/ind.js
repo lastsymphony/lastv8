@@ -31,7 +31,7 @@ exports.rediregis = () => {
 }
 
 exports.stikga = () => {
-	return`*Yah gagal coba ulangi beberapa saat lagi*`
+	return`*MAAF FITUR INI BARU DALAM MASA MAINTENCE*`
 }
 
 exports.linkga = () => {
