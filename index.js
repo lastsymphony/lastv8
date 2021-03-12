@@ -4362,13 +4362,13 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					})
 					await limitAdd(sender)
 					break
-                 case 'simi':
-					if (args.length < 1) return reply('Textnya mana kak?')
-					teks = body.slice(5)
-					anu = await simih(teks) fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
+                 //case 'simi':
+					//if (args.length < 1) return reply('Textnya mana kak?')
+					//teks = body.slice(5)
+					//anu = await simih(teks) fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
-					reply(anu)
-					break
+					//reply(anu)
+					//break
 		case 'simih':
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
