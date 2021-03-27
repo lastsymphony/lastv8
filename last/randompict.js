@@ -1,16 +1,16 @@
 const randompict = (prefix) => { 
-	return `「 *AINE BOT* 」
+	return `「 *SYMPHONY BOT* 」
 
 ◪ *INFO DEVELOPER*
-  ❏ Nama: Muhammad Ridwan Reynaldy
-  ❏ Wa: wa.me/62895330379186
-  ❏ Ig: https://instagram.com/anemio999
-  ❏ Fb: https://facebook.com/ridwan228
+  ❏ Nama: Aditya Jatayu
+  ❏ Wa: wa.me/
+  ❏ Ig: https://instagram.com/
+  ❏ Fb: https://facebook.com/
   ----------------------------------
-◪ *INFO AINEBOT*
-  ❏ Nama: AINEBOT 
-  ❏ Nomor: wa.me/12029991296
-  ❏ Fb: https://facebook.com/ainneboot
+◪ *INFO SYMPHONYBOT*
+  ❏ Nama: SYMPHONYBOT 
+  ❏ Nomor: wa.me/
+  ❏ Fb: https://facebook.com/
             *Rules* - *Simple*
 ▬▭▬▭▬▭▬▭▬▭▬▭▬
   ❏ *Spam : Auto Block!*
@@ -28,66 +28,66 @@ const randompict = (prefix) => {
 ▬▭▬▭▬▭▬▭▬▭▬▭▬
 ◪ *ABOUT*
   │
-  ├─ ❏ ${prefix}info
-  ├─ ❏ ${prefix}snk
-  ├─ ❏ ${prefix}lpr 
-  ├─ ❏ ${prefix}request
-  ├─ ❏ ${prefix}blocklist
-  ├─ ❏ ${prefix}ping
-  └─ ❏ ${prefix}gcainebot
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix} 
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
 <<========================>>
 ◪ *RANDOM PICTUE*
   │
   │ *ANIME*
-  ├─ ❏ ${prefix}hentai2
-  ├─ ❏ ${prefix}loli
-  ├─ ❏ ${prefix}loli2
-  ├─ ❏ ${prefix}neko
-  ├─ ❏ ${prefix}waifu
-  ├─ ❏ ${prefix}animecry
-  ├─ ❏ ${prefix}animehug
-  ├─ ❏ ${prefix}osakana
-  ├─ ❏ ${prefix}menherachan
-  ├─ ❏ ${prefix}naruto
-  ├─ ❏ ${prefix}anime
-  ├─ ❏ ${prefix}husbu
-  ├─ ❏ ${prefix}animegirl
-  ├─ ❏ ${prefix}animeboy
-  ├─ ❏ ${prefix}nekonime
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *RANDOM KPOP*
-  ├─ ❏ ${prefix}randomkpop
+  ├─ ❏ ${prefix}
   │
   │ *CARTOON*
-  ├─ ❏ ${prefix}doraemon
-  ├─ ❏ ${prefix}pokemon
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *ANIMAL*
-  ├─ ❏ ${prefix}anjing
-  ├─ ❏ ${prefix}kucing
-  ├─ ❏ ${prefix}hamster
-  ├─ ❏ ${prefix}kelinci
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *TRANSPORT*
-  ├─ ❏ ${prefix}mobil
-  ├─ ❏ ${prefix}motor
-  ├─ ❏ ${prefix}sepeda
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *AESTHETIC*
-  ├─ ❏ ${prefix}aesthetic
-  ├─ ❏ ${prefix}bluesky
-  ├─ ❏ ${prefix}flower
-  ├─ ❏ ${prefix}icecream
-  ├─ ❏ ${prefix}pemandangan
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *QUOTES PICTURE*
-  ├─ ❏ ${prefix}quotesid
-  ├─ ❏ ${prefix}quotesen
-  ├─ ❏ ${prefix}katakata
-  ├─ ❏ ${prefix}katamotivasi
-  ├─ ❏ ${prefix}kehidupan
-  └─ ❏ ${prefix}islami 
-◪ *POWERED BY AINEBOT*
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix} 
+◪ *POWERED BY SYMPHONYBOT*
 `
 }
 
