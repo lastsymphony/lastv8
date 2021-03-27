@@ -151,112 +151,91 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   
 ◪ *NEW FEATURE*
   │
-  ├─ ❏ ${prefix}nsfwloli
-  ├─ ❏ ${prefix}asupan
-  ├─ ❏ ${prefix}wiki
-  ├─ ❏ ${prefix}spamcall
-  ├─ ❏ ${prefix}tebakgambar
-  ├─ ❏ ${prefix}babi
-  ├─ ❏ ${prefix}caklontong
-  ├─ ❏ ${prefix}katailham
-  ├─ ❏ ${prefix}katabijak
-  ├─ ❏ ${prefix}fakta
-  ├─ ❏ ${prefix}mimpi
-  ├─ ❏ ${prefix}husbu
-  ├─ ❏ ${prefix}imagemountain
-  ├─ ❏ ${prefix}loli
-  ├─ ❏ ${prefix}imagegame
-  ├─ ❏ ${prefix}imagecyberspace
-  ├─ ❏ ${prefix}imageislamic
-  ├─ ❏ ${prefix}blackpink
-  ├─ ❏ ${prefix}randomexo
-  ├─ ❏ ${prefix}randombts
-  └─ ❏ ${prefix}menuownerwaifu
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
 
 ◪ *MAKER*
   │
-  ├─ ❏ ${prefix}nulis
-  ├─ ❏ ${prefix}sticker
-  ├─ ❏ ${prefix}stickergif
-  ├─ ❏ ${prefix}toimg
-  ├─ ❏ ${prefix}hartatata
-  ├─ ❏ ${prefix}quotemaker
-  ├─ ❏ ${prefix}galaxtext
-  ├─ ❏ ${prefix}pupycut
-  ├─ ❏ ${prefix}galaxstyle
-  ├─ ❏ ${prefix}hologram
-  ├─ ❏ ${prefix}textbyname
-  ├─ ❏ ${prefix}herrypoter
-  ├─ ❏ ${prefix}greanneon
-  └─ ❏ ${prefix}metallogo
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *MEDIA*
   │
-  └─ ❏ ${prefix}tribunews
+  └─ ❏ ${prefix}
   
 ◪ *OTHER FITUR*
   │
-  ├─ ❏ ${prefix}ssweb
-  ├─ ❏ ${prefix}hilih [teks]
-  ├─ ❏ ${prefix}alay [teks]
-  ├─ ❏ ${prefix}say [teks]
-  ├─ ❏ ${prefix}wiki [teks]
-  ├─ ❏ ${prefix}kbbi [teks]
-  ├─ ❏ ${prefix}map [teks]
-  ├─ ❏ ${prefix}kalkulator
-  ├─ ❏ ${prefix}lirik [teks]
-  ├─ ❏ ${prefix}brainly [teks]
-  ├─ ❏ ${prefix}bitly
-  ├─ ❏ ${prefix}chord [teks]
-  ├─ ❏ ${prefix}katabijak 
-  ├─ ❏ ${prefix}faktaunik 
-  ├─ ❏ ${prefix}faktaunikl
-  ├─ ❏ ${prefix}holoh
-  ├─ ❏ ${prefix}halah
-  ├─ ❏ ${prefix}huluh
-  ├─ ❏ ${prefix}heleh
-  ├─ ❏ ${prefix}hurufterbalik
-  ├─ ❏ ${prefix}lirik
-  ├─ ❏ ${prefix}alay2
-  ├─ ❏ ${prefix}fml
-  ├─ ❏ ${prefix}katadilan
-  ├─ ❏ ${prefix}katabucin
-  ├─ ❏ ${prefix}katabucin2
-  ├─ ❏ ${prefix}cerpen
-  ├─ ❏ ${prefix}quotes
-  ├─ ❏ ${prefix}bacotanhacker
-  ├─ ❏ ${prefix}quotedoraemon
-  ├─ ❏ ${prefix}infofilm
-  ├─ ❏ ${prefix}igvideo
-  ├─ ❏ ${prefix}pantun
-  └─ ❏ ${prefix}artinama [teks]
-  
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix} 
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
+
 ◪ *KERANG AJAIB*
   │
-  ├─ ❏ ${prefix}gantengcek
-  ├─ ❏ ${prefix}cantikcek
-  ├─ ❏ ${prefix}sangecek
-  ├─ ❏ ${prefix}gaycek
-  ├─ ❏ ${prefix}lesbicek
-  ├─ ❏ ${prefix}watak
-  ├─ ❏ ${prefix}hobby
-  ├─ ❏ ${prefix}apakah
-  ├─ ❏ ${prefix}kapankah
-  ├─ ❏ ${prefix}bisakah
-  ├─ ❏ ${prefix}bagaimanakah
-  └─ ❏ ${prefix}rate
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *DOWNLOADER*
   │
-  ├─ ❏ ${prefix}1cak
-  ├─ ❏ ${prefix}pinterest [teks]
-  ├─ ❏ ${prefix}ytmp3 [link]
-  ├─ ❏ ${prefix}ytmp4 [link]
-  ├─ ❏ ${prefix}play [teks]
-  ├─ ❏ ${prefix}fototiktok
-  ├─ ❏ ${prefix}igpost [teks]
-  ├─ ❏ ${prefix}igtv
-  └─ ❏ ${prefix}joox [teks]
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *FIND TARGET*
   │
@@ -265,28 +244,19 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   
 ◪ *RANDOM PICTUE*
   │ *ANIME*
-  ├─ ❏ ${prefix}loli
-  ├─ ❏ ${prefix}neko
-  ├─ ❏ ${prefix}waifu
-  ├─ ❏ ${prefix}animecry
-  ├─ ❏ ${prefix}animehug
-  ├─ ❏ ${prefix}osakana
-  ├─ ❏ ${prefix}naruto
-  ├─ ❏ ${prefix}anime
-  ├─ ❏ ${prefix}husbu
-  ├─ ❏ ${prefix}animegirl
-  ├─ ❏ ${prefix}animeboy
-  ├─ ❏ ${prefix}nekonime
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *RANDOM KPOP*
-  ├─ ❏ ${prefix}randomkpop
-  ├─ ❏ ${prefix}randombts
-  ├─ ❏ ${prefix}randomexo
-  ├─ ❏ ${prefix}blackpink
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *CARTOON*
-  ├─ ❏ ${prefix}doraemon
-  ├─ ❏ ${prefix}pokemon
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *ANIMAL*
   ├─ ❏ ${prefix}anjing
@@ -300,27 +270,27 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}sepeda
   │
   │ *AESTHETIC*
-  ├─ ❏ ${prefix}aesthetic
-  ├─ ❏ ${prefix}bluesky
-  ├─ ❏ ${prefix}flower
-  ├─ ❏ ${prefix}icecream
-  ├─ ❏ ${prefix}pemandangan
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   │
   │ *QUOTES*
-  ├─ ❏ ${prefix}quotes
-  ├─ ❏ ${prefix}quoteskehidupan
-  ├─ ❏ ${prefix}quotesislami
-  ├─ ❏ ${prefix}katabijak
-  ├─ ❏ ${prefix}katailham
-  ├─ ❏ ${prefix}quotesnasehat
-  └─ ❏ ${prefix}quotesmotivasi
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 
 ◪ *LIMIT & UANG & LB*
   │
   ├─ ❏ ${prefix}limit
   ├─ ❏ ${prefix}buylimit
-  ├─ ❏ ${prefix}buypremiumlimit
+  ├─ ❏ ${prefix}
   ├─ ❏ ${prefix}transfer
   └─ ❏ ${prefix}leaderboard
   
@@ -330,9 +300,9 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}demote [@tag]
   ├─ ❏ ${prefix}tagall
   ├─ ❏ ${prefix}listadmin
-  ├─ ❏ ${prefix}wakillist
-  ├─ ❏ ${prefix}premiumlist
-  ├─ ❏ ${prefix}banlist
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   ├─ ❏ ${prefix}blocklist
   ├─ ❏ ${prefix}linkgc
   ├─ ❏ ${prefix}mining
@@ -340,13 +310,13 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}grouplist
   ├─ ❏ ${prefix}add [62]
   ├─ ❏ ${prefix}kick [@tag]
-  ├─ ❏ ${prefix}setname
-  ├─ ❏ ${prefix}setdesc
-  ├─ ❏ ${prefix}setpp
-  ├─ ❏ ${prefix}listadmin
-  ├─ ❏ ${prefix}linkgc
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
   ├─ ❏ ${prefix}leave
-  ├─ ❏ ${prefix}mining
+  ├─ ❏ ${prefix}
   ├─ ❏ ${prefix}level
   ├─ ❏ ${prefix}grup [buka/tutup)
   ├─ ❏ ${prefix}welcome [1/0]
@@ -357,22 +327,22 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   
 ◪ *SOUND*
   │
-  ├─ ❏ ${prefix}hai
-  ├─ ❏ ${prefix}hallo [only computer]
-  ├─ ❏ ${prefix}aine
-  ├─ ❏ ${prefix}soundplaydate [only computer]
-  ├─ ❏ ${prefix}soundbakahentai [only computer]
-  ├─ ❏ ${prefix}sayonichan [only computer]
-  └─ ❏ ${prefix}gtts
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *ISLAM*
   │
-  └─ ❏ ${prefix}quran
+  └─ ❏ ${prefix}
   
 ◪ *STALK*
   │
-  ├─ ❏ ${prefix}tiktokstalk
-  └─ ❏ ${prefix}igstalk
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *WIBU*
   │
@@ -386,13 +356,13 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   
 ◪ *18+ Nsfw*
   |
-  ├─ ❏ ${prefix}blowjob
-  ├─ ❏ ${prefix}randomhentai
-  ├─ ❏ ${prefix}sfw
-  ├─ ❏ ${prefix}nsfw
-  ├─ ❏ ${prefix}randomsfw
-  ├─ ❏ ${prefix}randomnsfw
-  └─ ❏ ${prefix}nsfwneko
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *FUN*
   │
@@ -437,8 +407,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ◪ *OTHER*
   │
   ├─ ❏ ${prefix}wame
-  ├─ ❏ ${prefix}qrcode
-  └─ ❏ ${prefix}afk
+  ├─ ❏ ${prefix}
+  └─ ❏ ${prefix}
   
 ◪ *POWERED BY SYMPHONY*
 `
@@ -456,7 +426,7 @@ exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel,
 `}
  
 exports.limitend = (pushname) => {
-	return`*Maaf ${pushname} limit hari ini habis*\n*Hubungi kami* : wa.me/6289670394574\n\n*Note : Kami akan berikan random dari 1-10*`
+	return`*Maaf ${pushname} limit hari ini habis*\n*Hubungi* : wa.me/6289670394574\n\n*Note : Kami akan berikan random dari 1-10*`
 }
 
 exports.limitcount = (limitCounts) => {
