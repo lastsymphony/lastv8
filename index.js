@@ -2915,17 +2915,18 @@ itsmeiky.on('group-participants-update', async (anu) => {
 								} catch {
 								ppimg = 'https://i.ibb.co/t83vxF8/Tak-berjudul4-20210204091817.png'
 							}
+					daftarimg = await getbuffer(ppimg) 
                 					veri = sender
                 					if (isGroup) {
                     			addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
-                    			await itsmeiky.sendMessage(from, ppimg, image, {quoted: iky, caption: ind.registered(namaUser, umurUser, serialUser, time, sender)})
+                    			await itsmeiky.sendMessage(from, daftarimg, image, {quoted: iky, caption: ind.registered(namaUser, umurUser, serialUser, time, sender)})
                     			addATM(sender)
                     			addLevelingId(sender)
                     			checkLimit(sender)
                     			console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
                 			} else {
                     			addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
-                    			await itsmeiky.sendMessage(from, ppimg, image, {quoted: iky, caption: ind.registered(namaUser, umurUser, serialUser, time, sender)})
+                    			await itsmeiky.sendMessage(from, daftarimg, image, {quoted: iky, caption: ind.registered(namaUser, umurUser, serialUser, time, sender)})
                     			addATM(sender)
                     			addLevelingId(sender)
                     			checkLimit(sender)
