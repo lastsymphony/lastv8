@@ -13,8 +13,8 @@
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install libwebp
-> git clone https://github.com/lastsymphony/lastv4
-> cd lastv4
+> git clone https://github.com/lastsymphony/lastv8
+> cd lastv8
 > npm install
 > npm audit fix && npm start
 ```
